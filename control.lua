@@ -57,7 +57,7 @@ script.on_event(defines.events.on_player_joined_game, function(event)
 end)
 
 script.on_event(defines.events.on_tick, function(event)
-   if event.tick % 30 == 0 then --common trick to reduce how often this runs, we don't want it running every tick, just 1/second
+   if event.tick % 30 == 0 then --common trick to reduce how often this runs, we don't want it running every tick, just 2/second
       GUI:Update()
    end
 end)
